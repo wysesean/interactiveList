@@ -1,0 +1,25 @@
+*{
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+}
+
+#mainContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin:0;
+	padding:5%;
+}
+
+#iconTitleCont{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
