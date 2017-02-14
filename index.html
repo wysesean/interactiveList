@@ -1,73 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Nested Accordion</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
 <body>
-	<script type="text/javascript" src="scripts/script.js"></script>
 	<div id="mainContainer">
-		<div id="listItemContainer">
-			<div id="iconTitleCont">
-				<div class="iconContainer mainIcon">
-					<i class="material-icons">&#xE5C8;</i>
-				</div>
-				<div id="titleContainer mainTitle">
-					<p>Oat cake tootsie roll</p>
-				</div>
-			</div>
-			<div id="textContainer">
-				<p>Jelly sweet roll dragée gummies. Jelly-o cotton candy gingerbread. Dessert tart bear claw gummi bears I love oat cake cotton candy sesame snaps carrot cake. Croissant marshmallow tiramisu icing soufflé chocolate cake. I love pie icing. Sweet I love sweet roll cheesecake dessert. Tiramisu gingerbread I love. Muffin chocolate cake powder cheesecake oat cake tootsie roll candy soufflé. Brownie toffee powder tiramisu. Wafer I love jujubes croissant. Chocolate cake candy jujubes tootsie roll bonbon toffee I love. Topping candy jelly-o. Halvah faworki I love I love toffee pastry icing chupa chups. Pie gingerbread candy canes oat cake.</p>
-			</div>
-			<div class="listContainer">
-
-				<div class="listElement lvl1">
-					<div id="iconTitleCont">
-						<div class="iconContainer subIcon">
-							<i class="material-icons">&#xE315;</i>
-						</div>
-						<div class="titleContainer subTitle">
-							<p>DONUT PASTRY</p>
-						</div>
-					</div>
-					<div id="textContainer">
+		<h1>Nested Accordion in CSS</h1>
+		<ul class="main-menu">
+			<li>
+			<input type="checkbox" id="l1">
+			<label for="l1" class="underLine"><i class="iconArrow material-icons">&#xE5C8;</i>Oat Cake Tootsie Roll</label>
+			  	<ul>
+			  	<p class="textField">Jelly sweet roll dragée gummies. Jelly-o cotton candy gingerbread. Dessert tart bear claw gummi bears I love oat cake cotton candy sesame snaps carrot cake. Croissant marshmallow tiramisu icing soufflé chocolate cake. I love pie icing. Sweet I love sweet roll cheesecake dessert. Tiramisu gingerbread I love. Muffin chocolate cake powder cheesecake oat cake tootsie roll candy soufflé. Brownie toffee powder tiramisu. Wafer I love jujubes croissant. Chocolate cake candy jujubes tootsie roll bonbon toffee I love. Topping candy jelly-o. Halvah faworki I love I love toffee pastry icing chupa chups. Pie gingerbread candy canes oat cake.</p>
+			  		<li>
+			  			<input type="checkbox" id="s_1">
+						<label for="s_1" id="menu"><i class="iconArrow material-icons">&#xE315;</i>
+						<ul>
 						<p>Gingerbread cotton candy halvah gingerbread. Apple pie wypas liquorice I love chocolate cake I love. Jelly cotton candy wypas lemon drops. Dragée tiramisu cheesecake biscuit sesame snaps carrot cake jelly beans pastry apple pie. Chocolate cake cotton candy candy canes brownie ice cream. Muffin chocolate cake jelly-o cake pudding. Jujubes I love cookie. I love cupcake I love bear claw sweet croissant. Wypas bonbon chocolate cake bonbon bear claw gummies. Liquorice danish jelly tootsie roll. I love danish icing lemon drops dessert pie jujubes. Fruitcake wafer I love biscuit. Donut pastry apple pie sugar plum soufflé ice cream tart bonbon candy.</p>
-					</div>
-				</div>
-
-				<div class="listElement lvl2">
-					<div id="iconTitleCont">
-						<div class="iconContainer subIcon">
-							<i class="material-icons">&#xE315;</i>
-						</div>
-						<div class="titleContainer subTitle">
-							<p>CARROT CAKE</p>
-						</div>
-					</div>
-					<div id="textContainer">
-						<p>Wafer muffin cupcake apple pie tootsie roll I love. Carrot cake apple pie I love dessert. I love carrot cake lollipop jelly jelly-o brownie cake. Croissant brownie donut gingerbread dessert icing. Sugar plum jelly candy pudding liquorice liquorice cotton candy pie. Powder sesame snaps I love chocolate bar bonbon. Pudding gummi bears donut applicake carrot cake I love I love icing cake.</p>
-					</div>
-				</div>
-
-				<div class="listElement lvl3">
-					<div id="iconTitleCont">
-						<div class="iconContainer subIcon">
-							<i class="material-icons">&#xE315;</i>
-						</div>
-						<div class="titleContainer subTitle">
-							<p>TOOTSI ROLL MARSHMALLOW</p>
-						</div>
-					</div>
-					<div id="textContainer">
-						<p>I love tootsie roll marshmallow. Halvah jelly bear claw lemon drops lollipop. Brownie tiramisu I love I love halvah wafer. Powder jelly beans sesame snaps. Powder biscuit I love wypas soufflé apple pie marzipan. Cheesecake apple pie halvah croissant jelly I love.</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
+						</ul>
+ 						DONUT PASTRY</label>
+			 			<ul>
+			 			<p class="textField">I love tootsie roll marshmallow. Halvah jelly bear claw lemon drops lollipop. Brownie tiramisu I love I love halvah wafer. Powder jelly beans sesame snaps. Powder biscuit I love wypas soufflé apple pie marzipan. Cheesecake apple pie halvah croissant jelly I love.</p>
+						</ul>
+			  		</li>
+			  		<li>
+			  			<input type="checkbox" id="s_2">
+						<label for="s_2" id="menu"><i class="iconArrow material-icons">&#xE315;</i>CARROT CAKE</label>
+			 			<ul>
+			 			<p class="textField">Wafer muffin cupcake apple pie tootsie roll I love. Carrot cake apple pie I love dessert. I love carrot cake lollipop jelly jelly-o brownie cake. Croissant brownie donut gingerbread dessert icing. Sugar plum jelly candy pudding liquorice liquorice cotton candy pie. Powder sesame snaps I love chocolate bar bonbon. Pudding gummi bears donut applicake carrot cake I love I love icing cake.</p>
+						</ul>
+					</li>
+					<li>
+			  			<input type="checkbox" id=_3">
+						<label for=_3" id="menu"><i class="iconArrow material-icons">&#xE315;</i>TOOTSIE ROLL MARSHMALLOW</label>
+			 			<ul>
+			 			<p class="textField">I love tootsie roll marshmallow. Halvah jelly bear claw lemon drops lollipop. Brownie tiramisu I love I love halvah wafer. Powder jelly beans sesame snaps. Powder biscuit I love wypas soufflé apple pie marzipan. Cheesecake apple pie halvah croissant jelly I love.</p>
+						</ul>
+					</li>
+			  	</ul>
+			</li>
+ 			<li>
+			<input type="checkbox" id="l2">
+			<label for="l2" class="underLine"><i class="iconArrow material-icons">&#xE5C8;</i>Cream gummi bears</label>
+			  	<ul>
+			  	<p class="textField">Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.</p>
+			  		<li>
+			  			<input type="checkbox" id="l2_1">
+						<label for="l2_1" id="menu"><i class="iconArrow material-icons">&#xE315;</i>COOKIE ICE CREAM</label>
+			 			<ul>
+			 			<p class="textField">Liquorice jelly-o oat cake gingerbread chocolate caramels chupa chups muffin candy. I love dessert biscuit halvah lemon drops. Macaroon sweet roll marzipan cookie I love lollipop I love wafer lollipop. Caramels candy pudding brownie. Oat cake cake gingerbread bear claw croissant dessert. Lemon drops oat cake sugar plum wypas cupcake fruitcake liquorice. Muffin wafer tootsie roll caramels. I love brownie powder icing marzipan dragée. Pie fruitcake soufflé sweet roll faworki candy canes I love. Jelly-o carrot cake donut cheesecake.</p>
+						</ul>
+			  		</li>
+			  		<li>
+			  			<input type="checkbox" id="l2_2">
+						<label for="l2_2" id="menu"><i class="iconArrow material-icons">&#xE315;</i>BISCUIT CHUPA CHUPS TART</label>
+			 			<ul>
+			 			<p class="textField">Sweet muffin fruitcake. Marshmallow dessert gummies dragée. Dragée pudding caramels toffee I love I love. Pie candy canes soufflé candy jelly-o marshmallow marshmallow. Biscuit danish jelly beans lollipop sweet sesame snaps oat cake. I love chupa chups cake ice cream ice cream applicake tart. Dessert muffin chocolate bar.</p>
+						</ul>
+					</li>
+					<li>
+			  			<input type="checkbox" id="l2_3">
+						<label for="l2_3" id="menu"><i class="iconArrow material-icons">&#xE315;</i>CHOCOLATE TART MACAROON</label>
+			 			<ul>
+			 			<p class="textField">Faworki oat cake cotton candy cookie ice cream gummi bears. Ice cream bear claw icing macaroon apple pie caramels. Sugar plum applicake candy canes sesame snaps I love. Sugar plum brownie biscuit tiramisu marzipan. Ice cream I love sweet bear claw I love sweet cake tart. Danish marshmallow I love wypas pastry. Chocolate tart macaroon wypas sesame snaps apple pie chocolate sesame snaps. Cotton candy sweet roll pudding oat cake I love marzipan wafer chocolate cake.</p>
+						</ul>
+					</li>
+					<li>
+			  			<input type="checkbox" id="l2_4">
+						<label for="l2_4" id="menu"><i class="iconArrow material-icons">&#xE315;</i>LOLLIPOP LIQUORICE</label>
+			 			<ul>
+			 			<p class="textField">Cookie ice cream sweet I love cupcake. Fruitcake topping wafer. Lollipop liquorice I love tart wypas biscuit. Danish jelly-o gingerbread. Faworki jelly pastry. Wypas wypas topping I love I love candy canes liquorice. I love sweet roll fruitcake dragée wafer icing bonbon.</p>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+			<input type="checkbox" id="l3">
+			<label for="l3" class="underLine"><i class="iconArrow material-icons">&#xE5C8;</i>Jelly marzipan sugar plum</label>
+			  	<ul>
+			  	<p class="textField">Jujubes bonbon oat cake. Cookie cookie liquorice bear claw pudding jelly-o. Sugar plum oat cake cookie. Sweet pudding tiramisu. Donut bear claw marshmallow tootsie roll I love lollipop icing. Candy chocolate bar biscuit cake tart candy donut. Carrot cake tiramisu carrot cake I love chocolate cake cake pastry carrot cake faworki. Jujubes marzipan carrot cake lemon drops dragée cake fruitcake macaroon dessert. Cotton candy I love icing powder. Gummies marzipan biscuit I love I love pudding.</p>
+			  		<li>
+			  			<input type="checkbox" id="l3_1">
+						<label for="l3_1" id="menu"><i class="iconArrow material-icons">&#xE315;</i>TOFFEE SOUFFLE CHOCOLATE BAR</label>
+			 			<ul>
+			 			<p class="textField">Carrot cake chocolate cake cupcake pudding chocolate sweet. Dragée liquorice macaroon cookie dragée jelly beans. I love liquorice applicake cheesecake. I love jelly marzipan sugar plum bonbon. Pastry chupa chups pie jelly candy canes. Donut carrot cake ice cream pudding halvah jelly cupcake. Danish candy canes topping.</p>
+						</ul>
+			  		</li>
+			  		<li>
+			  			<input type="checkbox" id="l3_2">
+						<label for="l3_2" id="menu"><i class="iconArrow material-icons">&#xE315;</i>SUBTITLE</label>
+			 			<ul>
+			 			<p class="textField">Dragée chocolate cake cake. Marshmallow toffee chocolate cake. Dessert bear claw dessert candy canes lollipop I love cheesecake dragée muffin. Oat cake cupcake chocolate cotton candy. Danish sweet oat cake. Cookie bear claw bear claw bear claw wypas candy canes icing. Candy canes powder toffee soufflé chocolate bar macaroon. Soufflé I love brownie cookie I love chupa chups. Pastry pudding icing.</p>
+						</ul>
+					</li>
+					<li>
+			  			<input type="checkbox" id="l3_3">
+						<label for="l3_3" id="menu"><i class="iconArrow material-icons">&#xE315;</i>PIE WAFER BROWNIE</label>
+			 			<ul>
+			 			<p class="textField">Macaroon I love faworki halvah lollipop croissant chocolate cake lemon drops cheesecake. Croissant cookie halvah tiramisu powder tootsie roll applicake lemon drops. Ice cream jelly powder I love candy canes biscuit gingerbread jelly I love. Sugar plum marshmallow marzipan bear claw cookie. Jelly-o I love cake danish I love. Wypas donut dessert. I love carrot cake oat cake I love I love lollipop donut. Pie wafer brownie. Cake toffee marshmallow I love I love jelly-o.</p>
+						</ul>
+					</li>
+			  	</ul>
+			</li>
+			<li>
+			<input type="checkbox" id="l4">
+			<label for="l4" class="underLine"><i class="iconArrow material-icons">&#xE5C8;</i>Danish souffle</label>
+			  	<ul>
+			  	<p class="textField">Lemon drops ice cream I love danish soufflé cake jelly cupcake. Bear claw I love I love tart I love liquorice bear claw. Halvah chocolate gummi bears jelly-o jelly-o lollipop lemon drops liquorice. Candy canes tiramisu candy faworki apple pie. Chocolate jujubes sesame snaps ice cream cupcake. Halvah topping chupa chups biscuit. I love I love chupa chups tootsie roll marshmallow tart gummi bears chocolate.</p>
+			  		<li>
+			  			<input type="checkbox" id="l4_1">
+						<label for="l4_1" id="menu"><i class="iconArrow material-icons">&#xE315;</i>
+						BISCUIT BEAR CLAW BEAR CLAW</label>
+			 			<ul>
+			 			<p class="textField">Halvah I love jelly beans. Danish I love jelly beans sweet roll tart biscuit. Lemon drops wypas toffee candy canes lemon drops dragée. Sweet roll I love bonbon I love. Liquorice chocolate bar lollipop faworki lollipop sugar plum. Soufflé croissant lemon drops cotton candy. Jelly candy canes cupcake halvah macaroon.</p>
+						</ul>
+			  		</li>
+			  		<li>
+			  			<input type="checkbox" id="l4_2">
+						<label for="l4_2" id="menu"><i class="iconArrow material-icons">&#xE315;</i>JUJUBES BEAR CLAW TOPPING APPLECAKE</label>
+			 			<ul>
+			 			<p class="textField">Pastry ice cream pie marshmallow muffin gingerbread. Bonbon wafer sweet roll candy lollipop. Sugar plum jujubes sweet roll donut gummi bears chupa chups ice cream. Icing I love apple pie lemon drops faworki sugar plum sweet roll. Marshmallow liquorice cotton candy jujubes chocolate bar fruitcake topping carrot cake. Chocolate croissant cupcake macaroon pastry gummi bears jelly beans. Oat cake bear claw lollipop chocolate cake. Ice cream danish faworki dragée I love chupa chups cotton candy I love. Cookie gummi bears oat cake faworki powder. Wypas jelly bonbon tiramisu apple pie jelly beans.</p>
+						</ul>
+					</li>			
+				</ul>
+			</li>
+			<li>
+			<input type="checkbox" id="l5">
+			<label for="l5" class="underLine"><i class="iconArrow material-icons">&#xE5C8;</i>Jujubes bear claw topping</label>
+			  	<ul>
+			  	<p class="textField">Cotton candy chocolate cake macaroon applicake I love. Tart soufflé I love powder. I love tiramisu lollipop pie. Pudding gummi bears sweet. Candy chocolate I love jujubes pie donut. Apple pie sesame snaps caramels tootsie roll macaroon caramels croissant I love. Sweet roll chocolate lemon drops. I love I love muffin gummi bears I love cotton candy.</p>
+			  		<li>
+			  			<input type="checkbox" id="l5_1">
+						<label for="l5_1" id="menu"><i class="iconArrow material-icons">&#xE315;</i>FAWORKI JELLY PASTRY</label>
+			 			<ul>
+			 			<p class="textField">Liquorice jelly-o oat cake gingerbread chocolate caramels chupa chups muffin candy. I love dessert biscuit halvah lemon drops. Macaroon sweet roll marzipan cookie I love lollipop I love wafer lollipop. Caramels candy pudding brownie. Oat cake cake gingerbread bear claw croissant dessert. Lemon drops oat cake sugar plum wypas cupcake fruitcake liquorice. Muffin wafer tootsie roll caramels. I love brownie powder icing marzipan dragée. Pie fruitcake soufflé sweet roll faworki candy canes I love. Jelly-o carrot cake donut cheesecake.</p>
+						</ul>
+			  		</li>
+			  		<li>
+			  			<input type="checkbox" id="l5_2">
+						<label for="l5_2" id="menu"><i class="iconArrow material-icons">&#xE315;</i>CHOCOLATE CARAMELS</label>
+			 			<ul>
+			 			<p class="textField">Faworki oat cake cotton candy cookie ice cream gummi bears. Ice cream bear claw icing macaroon apple pie caramels. Sugar plum applicake candy canes sesame snaps I love. Sugar plum brownie biscuit tiramisu marzipan. Ice cream I love sweet bear claw I love sweet cake tart. Danish marshmallow I love wypas pastry. Chocolate tart macaroon wypas sesame snaps apple pie chocolate sesame snaps. Cotton candy sweet roll pudding oat cake I love marzipan wafer chocolate cake.</p>
+						</ul>
+					</li>
+					<li>
+			  			<input type="checkbox" id="l5_3">
+						<label for="l5_3" id="menu"><i class="iconArrow material-icons">&#xE315;</i>LOLLIPOP LIQUORICE</label>
+			 			<ul>
+			 			<p class="textField">Cookie ice cream sweet I love cupcake. Fruitcake topping wafer. Lollipop liquorice I love tart wypas biscuit. Danish jelly-o gingerbread. Faworki jelly pastry. Wypas wypas topping I love I love candy canes liquorice. I love sweet roll fruitcake dragée wafer icing bonbon.</p>
+						</ul>
+					</li>			
+				</ul>
+			</li>
 	</div>
-</body>
+	<script src="scripts/script.js" type="text/javascript"></script>
+
+	</body>
 </html>

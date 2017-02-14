@@ -1,25 +1,77 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  font-size: 0;
 }
 
-img{
-	max-width: 100%;
+body{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color:#47a3da;
+}
+
+
+h1{
+    font-size: 35px;
+}
+
+label {
+    position: relative; 
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 15px;
+}
+
+
+.iconArrow{
+    color: #ddd;
+    font-size: 30px;
+}
+
+.underLine{
+	border-bottom: 2px solid #ddd;
 }
 
 #mainContainer{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin:0;
-	padding:5%;
+	margin: 10px 7% 0 7%;
+	max-width: 800px;
 }
 
-#iconTitleCont{
-	display:flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+label .material-icons{
+	font-size: 36px;
 }
 
+#menu{
+    font-size: 20px;
+}
+
+.textField {
+    color: #888;
+    font-size: 20px;
+}
+
+label:hover .iconArrow{
+    transform: rotate(45deg);
+    color: #47a3da;
+}
+
+.main-menu ul {
+    display: none;
+}
+
+input[type=checkbox]{
+	opacity:0;
+}
+
+.main-menu input[type=checkbox]{
+    position: absolute;
+}
+
+input[type=checkbox]:checked + label + ul{
+    display: block;
+}
+
+input[type=checkbox]:checked +label .iconArrow{
+	transform: rotate(90deg);
+	color: #47a3da;
+}
